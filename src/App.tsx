@@ -5,6 +5,7 @@ import heroImg from './assets/NapoleonHero.png'
 import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './sections/HeroSection'
+import Footer from './components/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -119,6 +120,7 @@ function App() {
 
       <div className="ticks"></div>
       <section id="spacer"></section>
+      <Footer />
     </>
   )
 }
