@@ -1,14 +1,18 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import heroImg from './assets/NapoleonHero.png'
 import './App.css'
+import Navbar from './components/Navbar'
+import HeroSection from './sections/HeroSection'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+      <Navbar title="Napoleon History" />
+      <HeroSection title="Welcome to Napoleon History" description="Explore the life and legacy of Napoleon Bonaparte, one of history's most influential figures." imageUrl={heroImg} />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
