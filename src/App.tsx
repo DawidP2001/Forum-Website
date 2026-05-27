@@ -9,6 +9,8 @@ import Footer from './components/Footer'
 import RiseSection from './sections/RiseSection'
 import ZenithSection from './sections/ZenithSection'
 import FallSection from './sections/FallSection'
+import Section1798 from './sections/1798'
+import Timeline from './components/Timeline'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +19,8 @@ function App() {
     <>
       <Navbar title="Napoleon History" />
       <HeroSection title="Welcome to Napoleon History" description="Explore the life and legacy of Napoleon Bonaparte, one of history's most influential figures." imageUrl={heroImg} />
+      <Timeline />
+      <Section1798 title="The Year 1798: A Pivotal Moment" description="Discover the significant events of 1798 that shaped Napoleon's early career and set the stage for his rise to power." imageUrl={heroImg} />
       <RiseSection title="The Rise of Napoleon" description="Discover how Napoleon rose to power, his military genius, and his impact on France and Europe." imageUrl={heroImg} />
       <ZenithSection title="The Zenith of Napoleon's Power" description="Learn about Napoleon's peak years, his conquests, and the establishment of the Napoleonic Empire." imageUrl={heroImg} />
       <FallSection title="The Fall of Napoleon" description="Explore the factors that led to Napoleon's downfall, his exile, and his enduring legacy in history." imageUrl={heroImg} />
