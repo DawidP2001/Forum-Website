@@ -6,6 +6,9 @@ import './App.css'
 import Navbar from './components/Navbar'
 import HeroSection from './sections/HeroSection'
 import Footer from './components/Footer'
+import RiseSection from './sections/RiseSection'
+import ZenithSection from './sections/ZenithSection'
+import FallSection from './sections/FallSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +17,9 @@ function App() {
     <>
       <Navbar title="Napoleon History" />
       <HeroSection title="Welcome to Napoleon History" description="Explore the life and legacy of Napoleon Bonaparte, one of history's most influential figures." imageUrl={heroImg} />
+      <RiseSection title="The Rise of Napoleon" description="Discover how Napoleon rose to power, his military genius, and his impact on France and Europe." imageUrl={heroImg} />
+      <ZenithSection title="The Zenith of Napoleon's Power" description="Learn about Napoleon's peak years, his conquests, and the establishment of the Napoleonic Empire." imageUrl={heroImg} />
+      <FallSection title="The Fall of Napoleon" description="Explore the factors that led to Napoleon's downfall, his exile, and his enduring legacy in history." imageUrl={heroImg} />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
