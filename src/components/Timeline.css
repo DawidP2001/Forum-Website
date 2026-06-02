@@ -11,6 +11,7 @@
 /* Individual wrapper for each timeline block */
 .timeline-item {
   position: relative;
+  padding-left: 60px;
   margin-bottom: 40px;
 }
 
@@ -25,9 +26,18 @@
     margin-bottom: 10px;
     margin-left: -10px;
     z-index: -1;
+    position: relative;
 }
 /* The circular node indicator */
 
+.timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+}
 
 .timeline-dot-image {
   width: 40px;
@@ -63,4 +73,19 @@
   color: #666;
   font-size: 0.95rem;
   line-height: 1.5;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 4px;
+  background-color: red;
+}
+
+.timeline-long-line{
+  transform: translateX(22px);
+  background-color: rgb(22, 83, 197);
 }
